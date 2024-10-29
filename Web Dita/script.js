@@ -1,0 +1,17 @@
+// Daftar tebakan hadiah lucu
+const hadiah = [
+    "I LOVE YOU❤️😊",
+];
+
+// Fungsi untuk menebak hadiah
+function tebakKado() {
+    // Pilih hadiah secara acak
+    const randomHadiah = hadiah[Math.floor(Math.random() * hadiah.length)];
+    
+    // Ganti teks tombol menjadi kalimat cinta
+    const tombol = document.querySelector("button"); // Mengambil elemen tombol
+    tombol.innerText = "Giving you all my love💘. Bubuubb, aku tuh bingung mau ngasih apa ke kamu, aku tuh takut kalau barang yang aku kasih engga kepake. jadiiii aku bakal kirim uangnya aja, jadi kamu bisa beli sendiri barang atau sesuatu yang kamu butuhin atau yang kamu mau, kirim no e-wallet kamu atau rekening kamu di wa aku ya bubub..";
+    
+    // Tampilkan hasil tebakan hadiah
+    document.getElementById("hasil-tebakan").innerText = randomHadiah;
+}

@@ -1,0 +1,157 @@
+/* Mengatur margin, padding, dan box-sizing untuk seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan untuk body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF1493;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden; /* Menghindari horizontal scroll */
+}
+
+/* Container utama */
+.container {
+    max-width: 100%;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pengaturan untuk judul h1 */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4081;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+}
+
+h1::before, h1::after {
+    content: '❤️';
+    position: absolute;
+    font-size: 0.8em;
+    top: -10px;
+}
+
+h1::before {
+    left: -20px;
+}
+
+h1::after {
+    right: -20px;
+}
+
+/* Pengaturan ucapan */
+.ucapan {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Pengaturan untuk bagian flirting */
+.flirting {
+    margin: 20px 0;
+}
+
+.flirting h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.flirting ul {
+    list-style-type: none;
+}
+
+.flirting li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Pengaturan untuk game */
+.game {
+    margin: 20px 0;
+}
+
+/* Pengaturan untuk tombol */
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #e91e63;
+}
+
+#hasil-tebakan {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #ff4081;
+}
+
+/* Pengaturan untuk container foto */
+.foto-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Bingkai love dan bingkai kotak */
+.love-frame, .box-frame {
+    display: inline-block;
+    position: absolute;
+}
+
+/* Bingkai love di kiri atas */
+.love-frame {
+    border: 5px solid #ff4081;
+    border-radius: 50%;
+    padding: 8px;
+    top: 10%;
+    left: -30px; /* Lebih ke kiri agar tidak menutupi teks */
+    transform: translate(0, 0);
+}
+
+.love-frame img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Bingkai kotak di kanan atas */
+.box-frame {
+    padding: 8px;
+    border: 4px dashed #ff4081;
+    background: linear-gradient(45deg, #ff4081, #e91e63);
+    border-radius: 15px;
+    top: 10%;
+    right: -30px; /* Lebih ke kanan agar tidak menutupi teks */
+}
+
+.box-frame img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
